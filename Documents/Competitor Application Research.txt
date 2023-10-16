@@ -1,0 +1,26 @@
+Going - Phone app
+-Sends notifications when a discounted airfare is available to selected destination
+
+Skyscanner - Phone app
+-Alerts for specific dates or routes
+-Sends you to third-party booking app to make the purchase
+
+Google Flights - Website
+-Flights to specific airports and then see a calendar view that shows when flights will be cheapest
+-Pricing graph to see ticket prices over time
+
+Hopper - Phone app
+-Notification when prices drop to their expected lowest level
+-Says it can predict future travel prices with 95% accuracy
+-Color codes flights based on which flights are most and least expensive
+
+Kiwi - Phone app
+-Users can get price alerts, access mobile boarding passes and view airport maps
+
+ExpertFlyer - Website
+-Intended for those who know where, when and with which airline they want to fly, can even specify seat
+-If you have a specific route that you travel frequently, ExpertFlyer can help you find discounted fares
+
+Onriva - Phone app
+-Ability to book airline tickets directly with the airlines instead of acting as digital travel agency
+-Uses artificial intelligence to learn user preferences and make recommendations
