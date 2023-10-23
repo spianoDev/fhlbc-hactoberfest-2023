@@ -58,7 +58,10 @@ def retrieve_travel_info(source, destination, start_date, end_date):
 
         if response.status_code == 200:
             print("sucessfully fetched the data with parameters provided")
-            return  json.loads(response.text)
+            api_response =  json.loads(response.text)
+            records = list_trip_options(api_response)        
+            print(records)
+            return records
         else:
             print(f"Error in retriving the flight information : {response.status_code} error with request.")
     else:
@@ -69,8 +72,15 @@ def retrieve_travel_info(source, destination, start_date, end_date):
 # Need a volunteer to add their name here, claim this function and make a push!
 def list_trip_options(api_response):
     """Function which parses API response and returns top 5 list of airfare choices based on price."""
+    items = api_response["data"]
+    # As of now we are returning top 5 records
+    #This can be changed in future.
+    """TODO : Need to ad the sorting based on the price"""
+    records = items[:5]
+    return records
     pass
     return None
 
+"""TODO: Remove below invoke as this was added to test the function."""
 print (retrieve_travel_info("SYD","BKK","2023-12-02","2023-12-03"))
 print ("prgram end")
