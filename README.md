@@ -25,3 +25,12 @@ The following are some initial features we would build out to enhance the MVP:
 - Allow user to navigate to actual booking step
 - Establish login for users
 - Record users selection/past results
+
+### Setting up Django
+
+For the first iteration of this project's database, each user will have to establish a local postgres database to 
+run Django. This means that saved data will vary from user to user, but the application should run for each of us. 
+We will create a better collaborative solution later, but to get started, refer to the 
+[database setup](https://www.spiano.dev/djangoTutorial/#database_setup) 
+section of this 
+[Django Tutorial](https://www.spiano.dev/djangoTutorial/). 
