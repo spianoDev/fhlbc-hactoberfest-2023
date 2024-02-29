@@ -1,6 +1,6 @@
 import json
 import requests
-from API.config import base_url, token_headers, token_url
+from API.config import base_url, token_headers, token_url, location_url
 from API.creds import api_key, api_secret
 
 
@@ -63,3 +63,19 @@ def list_trip_options(api_response):
     """TODO : Need to add the sorting based on the price."""
     records = items[:5]
     return records
+
+#Funtion to get the Airport details for source/destination dropdown.
+def get_airport_list(keyword):
+    parameters = {
+        "subType": "AIRPORT,CITY",
+        "keyword": keyword
+    }
+    
+    response = requests.get(location_url, params=parameters,headers=api_login())
+
+    if response.status_code == 200:
+        print("sucessfully fetched the location/airport data with parameters provided")
+        api_response =  json.loads(response.text)
+        records = list_trip_options(api_response)        
+        print(records)
+        return records
