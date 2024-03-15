@@ -34,3 +34,12 @@ We will create a better collaborative solution later, but to get started, refer 
 [database setup](https://www.spiano.dev/djangoTutorial/#database_setup) 
 section of this 
 [Django Tutorial](https://www.spiano.dev/djangoTutorial/). 
+
+
+### Setting up API Keys
+
+To use your API credentials in the code please follow the below instructions:
+- Create a creds.py file within the API folder.
+- Add your API key and API secret into the creds.py as key value pairs with the following key names:
+  - api_key: ADD YOUR API KEY HERE
+  - api_secret: ADD YOUR API SECRET
